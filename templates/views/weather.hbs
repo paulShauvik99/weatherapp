@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>headLinks}}
+</head>
+<body>
+    {{>navbar}}
+<div class="container-fluid main_content">
+    <div class="row">
+        <div class="col-md-12 col-12 mx-auto">
+            <form class="temp_form">
+                <input type="text" class="search form-control" id="city_name" placeholder="Enter Your City Name" autocomplete="off" >
+                <input type="submit" value="Search" id="subBtn">
+            </form>
+            <div class="main_div">
+
+                <div class="wave one"></div>
+                <div class="wave two"></div>
+                <div class="wave three"></div>
+                <div id="weather"></div>
+                
+                <div id="des"></div>
+                
+                <div class="weather_details data_hide">
+                    <h2 class="location"><i class="fas fa-street-view"></i><span id="ciCon"></span></h2>
+                    <p id="date">  </p>
+                    <h1 class="temp" id="temp"> </h1>
+                    <h3 class="temp_min_max" id="temp_min_max"> </h3>
+                    <h4 id="feels"></h4>
+                </div>
+           </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+    {{>footer}}
+</body>
+<script src="script/script.js"></script>
+
+</html>
